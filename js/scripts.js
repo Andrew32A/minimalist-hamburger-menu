@@ -1,4 +1,18 @@
-// const menu = document.getElementById("item1")
+const menu = document.getElementById("menuParent")
+const items = document.getElementsByClassName("item")
+
+menu.addEventListener("click", function() {
+    for(i=0; i<items.length; i++) {
+        items[i].style.opacity = "1"
+    }
+    anime ({
+        targets: "#menu",
+        translateX: 270,
+        // delay: anime.stagger(100)
+    })
+})
+
+// notes:
 
 // menu.addEventListener("mouseover", bubble)
 
@@ -24,9 +38,3 @@
 //     }) 
 // }
 // import anime from './anime.js';
-
-anime ({
-    targets: "#menu",
-    translateX: 270,
-    // delay: anime.stagger(100)
-})
