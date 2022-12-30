@@ -21,7 +21,6 @@ body {
 #menu {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 
     max-width: 600px;
     font-family: "Avenir", "arial";
@@ -53,9 +52,34 @@ body {
 }
 
 .item {
-    opacity: 0;
+    border-radius: 10px;
+    opacity: -1; /* had to set opacity to -1 to avoid weird stutter from bounceback effect in anime.js */
     list-style: none;
 }
+/* 
+#item1:hover {
+    background-color: #4b5975;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+#item2:hover {
+    background-color: #4b5975;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+#item3:hover {
+    background-color: #4b5975;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+#item4:hover {
+    background-color: #4b5975;
+    background-position: center;
+    transition: all 0.5s ease;
+} */
 
 /* #item1 {
     background-color: aqua;
