@@ -23,6 +23,8 @@ body {
     align-items: center;
 
     max-width: 600px;
+    /* might need to change this later */
+    width: 125px;
     font-family: "Avenir", "arial";
     line-height: 25px;
     text-align: justify;
@@ -33,7 +35,7 @@ body {
     padding: 1em;
     border: 0;
     margin: 0;
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
 
 #menuParent {
@@ -45,15 +47,15 @@ body {
     width: 27px;
 }
 
-#menuParent:hover {
+/* #menuParent:hover {
     background-color: #4b5975;
     background-position: center;
     transition: all 0.5s ease;
-}
+} */
 
 .item {
     border-radius: 10px;
-    opacity: -1; /* had to set opacity to -1 to avoid weird stutter from bounceback effect in anime.js */
+    opacity: -2; /* had to set opacity to -1 to avoid weird stutter from bounceback effect in anime.js */
     list-style: none;
 }
 /* 
