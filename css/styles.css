@@ -19,6 +19,10 @@ body {
 }
 
 #menu {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
     max-width: 600px;
     font-family: "Avenir", "arial";
     line-height: 25px;
@@ -28,6 +32,9 @@ body {
     font-variant: no-common-ligatures;
     font-size: 20px;
     padding: 1em;
+    border: 0;
+    margin: 0;
+    /* border-radius: 10px; */
 }
 
 #menuParent {
@@ -50,8 +57,8 @@ body {
     list-style: none;
 }
 
-#item1 {
+/* #item1 {
     background-color: aqua;
     border-radius: 10px;
     width: 0%;
-}
+} */
