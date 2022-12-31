@@ -1,5 +1,12 @@
 const menuParent = document.getElementById("menuParent")
-const itemArray = ["#item1", "#item2", "#item3", "#item4"]
+const item1 = document.getElementById("item1")
+const item2 = document.getElementById("item2")
+const item3 = document.getElementById("item3")
+const item4 = document.getElementById("item4")
+// item is an array when getting it by class name
+const item = document.getElementsByClassName("item")
+const itemArray = [item1, item2, item3, item4]
+const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
 let menuCounter = 0
 
 // opens menu
@@ -11,9 +18,9 @@ function openMenu() {
         easing: "easeInOutQuad"
     })
 
-    for (let i = 0; i < itemArray.length; i++) {
+    for (let i = 0; i < itemIDArray.length; i++) {
         anime ({
-            targets: itemArray[i],
+            targets: itemIDArray[i],
             translateX: (60 * (i + 1)),
             opacity: 2,
             easing: "easeInOutQuad"
@@ -33,9 +40,9 @@ function closeMenu() {
         easing: "easeOutQuint"
     })
 
-    for (let i = 0; i < itemArray.length; i++) {
+    for (let i = 0; i < itemIDArray.length; i++) {
         anime ({
-            targets: itemArray[i],
+            targets: itemIDArray[i],
             translateX: 0,
             opacity: -2 // had to set opacity to -2 to avoid weird stutter from bounceback effect in anime.js
         })
@@ -55,3 +62,21 @@ function menuToggle() {
 
 // activates menu functionality, remove this to disable menu
 menuParent.addEventListener("click", menuToggle)
+
+// changes menu parent value depending on which item was clicked
+function menuChange(item) {
+    console.log(item)
+    for (i = 0; i < itemArray.length; i++) {
+        if (item.id === itemArray[i].id) {
+            menuParent.innerHTML = itemArray[i].innerHTML
+        }
+    }
+    
+    menuCounter++
+    closeMenu()
+}
+
+// handles item logic on click
+// for (i = 0; i < item.length; i++) {
+//     item[i].addEventListener("click", menuToggle(i))
+// }
