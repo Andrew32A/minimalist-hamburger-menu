@@ -1,15 +1,3 @@
-/* .menuWrapper {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    width: 40px;
-    height: 40px;
-} */
-
 body {
     background-color: #1b2028;
 }
@@ -19,7 +7,7 @@ body {
     align-items: center;
 
     max-width: 600px;
-    /* might need to change this later */
+    /* might need to change width sizing later */
     width: 125px;
     font-family: "Avenir", "arial";
     line-height: 25px;
@@ -38,7 +26,6 @@ body {
 #menuParent {
     padding: 0;
     color: #23a9d5;
-    /* border: 1px solid #1b2028; */
     margin: 0;
     border-radius: 10px;
     height: 25px;
@@ -47,11 +34,7 @@ body {
 }
 
 #menuParent:hover {
-    /* border-color: #4b5975; */
-
-    /* background-position: center; */
     color: #ccccb5;
-    /* transition: all 0.5s ease; */
 }
 
 .item {
@@ -65,37 +48,5 @@ body {
 
 .item:hover {
     color: #ccccb5;
-    /* transition: all 0.5s ease; */
     cursor: pointer;
 }
-
-/* 
-#item1:hover {
-    background-color: #4b5975;
-    background-position: center;
-    transition: all 0.5s ease;
-}
-
-#item2:hover {
-    background-color: #4b5975;
-    background-position: center;
-    transition: all 0.5s ease;
-}
-
-#item3:hover {
-    background-color: #4b5975;
-    background-position: center;
-    transition: all 0.5s ease;
-}
-
-#item4:hover {
-    background-color: #4b5975;
-    background-position: center;
-    transition: all 0.5s ease;
-} */
-
-/* #item1 {
-    background-color: aqua;
-    border-radius: 10px;
-    width: 0%;
-} */

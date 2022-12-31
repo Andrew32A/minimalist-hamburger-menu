@@ -2,6 +2,7 @@ const menuParent = document.getElementById("menuParent")
 const itemArray = ["#item1", "#item2", "#item3", "#item4"]
 let menuCounter = 0
 
+// opens menu
 function openMenu() {
     anime({
         targets: "#menu",
@@ -17,11 +18,13 @@ function openMenu() {
             opacity: 2,
             easing: "easeInOutQuad"
             // i really wanted to use stagger to handle each item element, but it's only available on the latest version of anime.js which i couldn't get to work right now
+            // instead, i used a for loop to handle each element
             // delay: anime.stagger(100)
         })
     }
 }
 
+// closes menu
 function closeMenu() {
     anime({
         targets: "#menu",
@@ -39,6 +42,7 @@ function closeMenu() {
     }
 }
 
+// counts the num of times the user clicked on menu and handles menu behaviour as needed
 function menuToggle() {
     menuCounter++
     if (menuCounter % 2 === 0) {
@@ -49,4 +53,5 @@ function menuToggle() {
     }
 }
 
+// activates menu functionality, remove this to disable menu
 menuParent.addEventListener("click", menuToggle)
