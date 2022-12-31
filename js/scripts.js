@@ -8,7 +8,7 @@ let menuCounter = 0
 function openMenu() {
     anime({
         targets: "#menu",
-        backgroundColor: "#4b5975",
+        backgroundColor: "#151a21",
         width: "375px",
         easing: "easeInOutQuad"
     })
@@ -47,13 +47,13 @@ function closeMenu() {
     anime({
         targets: "#menu",
         backgroundColor: "#1b2028",
-        width: "0px",
+        width: "125px",
         easing: "easeOutQuint"
     })
 
-    setTimeout(function() {
-        menu.style.width = "125px"
-    }, 500)
+    // setTimeout(function() {
+    //     menu.style.width = "125px"
+    // }, 500)
 
     anime ({
         targets: "#item1",
