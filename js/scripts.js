@@ -28,6 +28,8 @@ function openMenu() {
             // instead, i used a for loop to handle each element
             // delay: anime.stagger(100)
         })
+
+        itemArray[i].style.visibility = "visible"
     }
 }
 
@@ -46,6 +48,8 @@ function closeMenu() {
             translateX: 0,
             opacity: -2 // had to set opacity to -2 to avoid weird stutter from bounceback effect in anime.js
         })
+
+        itemArray[i].style.visibility = "hidden"
     }
 }
 
@@ -75,8 +79,3 @@ function menuChange(item) {
     menuCounter++
     closeMenu()
 }
-
-// handles item logic on click
-// for (i = 0; i < item.length; i++) {
-//     item[i].addEventListener("click", menuToggle(i))
-// }
