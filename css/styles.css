@@ -10,10 +10,6 @@
     height: 40px;
 } */
 
-* {
-    color: #23a9d5;
-}
-
 body {
     background-color: #1b2028;
 }
@@ -36,29 +32,41 @@ body {
     border: 0;
     margin: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #menuParent {
+    padding: 0;
     color: #23a9d5;
-    border: 0;
+    /* border: 1px solid #1b2028; */
     margin: 0;
     border-radius: 10px;
     height: 25px;
-    width: 27px;
+    /* width: 27px; */
+    cursor: pointer;
 }
 
-/* #menuParent:hover {
-    background-color: #4b5975;
-    background-position: center;
+#menuParent:hover {
+    /* border-color: #4b5975; */
+
+    /* background-position: center; */
+    color: #ccccb5;
     transition: all 0.5s ease;
-} */
+}
 
 .item {
     color: #4b5975;
+    padding: 0;
     margin: 0;
     border-radius: 10px;
     opacity: -2; /* had to set opacity to -1 to avoid weird stutter from bounceback effect in anime.js */
     list-style: none;
+}
+
+.item:hover {
+    color: #ccccb5;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 /* 
 #item1:hover {

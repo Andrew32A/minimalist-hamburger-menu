@@ -18,6 +18,7 @@ function openMenu() {
         translateX: 60,
         opacity: 2,
         easing: "easeInOutQuad",
+        // i really wanted to use stagger to handle each item element, but it's only available on the latest version of anime.js which i couldn't get to work right now
         // delay: anime.stagger(100)
     })
 
