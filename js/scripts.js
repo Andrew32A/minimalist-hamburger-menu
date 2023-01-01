@@ -6,12 +6,19 @@ const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
 
 let menuCounter = 0
 
+// helper function to calculate width based on num of items
+function widthCalculator() {
+    // takes length of array, adds 1 for menuParent, then times it by 73px which was from the original value (365px / 5)
+    let width = `${((itemArray.length + 1) * 73)}px`
+    return width
+}
+
 // opens menu
 function openMenu() {
     anime({
         targets: "#menu",
         backgroundColor: "#151a21",
-        width: "365px",
+        width: widthCalculator(),
         easing: "easeInOutQuad"
     })
 
