@@ -23,7 +23,7 @@ body {
     cursor: default;
 }
 
-#menuParent {
+.menuParent {
     padding: 0;
     color: #23a9d5;
     margin: 0;
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
 }
 
-#menuParent:hover {
+.menuParent:hover {
     color: #ccccb5;
 }
 

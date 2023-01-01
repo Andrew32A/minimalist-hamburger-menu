@@ -1,7 +1,7 @@
-const menuParent = document.getElementById("menuParent")
+const menuParent = document.querySelector(".menuParent")
 
-// item is an array when getting it by class name
-const itemArray = document.getElementsByClassName("item")
+// item is an array when getting it by query selector all
+const itemArray = document.querySelectorAll(".item")
 const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
 
 let menuCounter = 0
