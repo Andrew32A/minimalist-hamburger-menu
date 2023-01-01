@@ -1,11 +1,6 @@
 const menuParent = document.getElementById("menuParent")
-const item1 = document.getElementById("item1")
-const item2 = document.getElementById("item2")
-const item3 = document.getElementById("item3")
-const item4 = document.getElementById("item4")
 // item is an array when getting it by class name
-const item = document.getElementsByClassName("item")
-const itemArray = [item1, item2, item3, item4]
+const itemArray = document.getElementsByClassName("item")
 const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
 let menuCounter = 0
 
