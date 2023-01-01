@@ -1,8 +1,5 @@
 const menuParent = document.querySelector(".menuParent")
-
-// item is an array when getting it by query selector all
-const itemArray = document.querySelectorAll(".item")
-const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
+const itemArray = document.querySelectorAll(".item") // item is an array when getting it by query selector all
 
 let menuCounter = 0
 
@@ -22,9 +19,9 @@ function openMenu() {
         easing: "easeInOutQuad"
     })
 
-    for (let i = 0; i < itemIDArray.length; i++) {
+    for (let i = 0; i < itemArray.length; i++) {
         anime ({
-            targets: itemIDArray[i],
+            targets: itemArray[i],
             translateX: (60 * (i + 1)),
             opacity: 2,
             easing: "easeInOutQuad"
@@ -46,9 +43,9 @@ function closeMenu() {
         easing: "easeOutQuint"
     })
 
-    for (let i = 0; i < itemIDArray.length; i++) {
+    for (let i = 0; i < itemArray.length; i++) {
         anime ({
-            targets: itemIDArray[i],
+            targets: itemArray[i],
             translateX: 0,
             opacity: -2 // had to set opacity to -2 to avoid weird stutter from bounceback effect in anime.js
         })
