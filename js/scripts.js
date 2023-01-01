@@ -1,7 +1,9 @@
 const menuParent = document.getElementById("menuParent")
+
 // item is an array when getting it by class name
 const itemArray = document.getElementsByClassName("item")
 const itemIDArray = ["#item1", "#item2", "#item3", "#item4"]
+
 let menuCounter = 0
 
 // opens menu
@@ -9,7 +11,7 @@ function openMenu() {
     anime({
         targets: "#menu",
         backgroundColor: "#151a21",
-        width: "375px",
+        width: "365px",
         easing: "easeInOutQuad"
     })
 
